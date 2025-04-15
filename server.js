@@ -37,7 +37,7 @@ app.use(passport.initialize());
 connect();
 
 // Mount routes
-app.use('/api/auth', authRoutes);
+app.use('/auth', authRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/food', foodRoutes);
 app.use('/api/order', orderRoutes);
