@@ -38,13 +38,13 @@ connect();
 
 // Mount routes
 app.use('/auth', authRoutes);
-app.use('/api/contact', contactRoutes);
-app.use('/api/food', foodRoutes);
-app.use('/api/order', orderRoutes);
-app.use('/api/payment', paymentRoutes);
-app.use('/api/reset-password', resetPasswordRoutes);
-app.use('/api/restaurant', restaurantRoutes);
-app.use('/api/reviews', ratingReviewRoutes);
+app.use('/contact', contactRoutes);
+app.use('/food', foodRoutes);
+app.use('/order', orderRoutes);
+app.use('/payment', paymentRoutes);
+app.use('/reset-password', resetPasswordRoutes);
+app.use('/restaurant', restaurantRoutes);
+app.use('/reviews', ratingReviewRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
