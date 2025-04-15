@@ -21,7 +21,7 @@ const app = express();
 
 // Middlewares
 const corsOptions = {
-  origin: 'http://localhost:3000', //React app's URL
+  origin: process.env.CLIENT_URL, //React app's URL
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'], // HTTP methods
   credentials: true, // to allow credentials (cookies, authorization headers)
   allowedHeaders: ['Content-Type', 'Authorization'],
